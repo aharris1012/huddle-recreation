@@ -22,6 +22,13 @@ p{
     padding:4% 5%;
 }
 
+@media only screen and (max-width: 1440px){
+    .mobile-only{
+      display:none;
+
+       
+    }
+}
 .main-container{
     max-width: 1440px;
     background-color: hsl(257, 40%, 49%);
@@ -32,6 +39,7 @@ p{
     position: absolute;
     
 }
+
 @media only screen and (max-width: 375px){
     .main-container{
     width: 375px;
@@ -50,20 +58,25 @@ p{
 .flex-container{
     display: flex;
 }
+
+
 @media only screen and (max-width: 375px){
     .flex-container{
         display: flex;
         flex-direction: column;
+        margin: 8%;
     }
 }
 
 .left-side-image{
     margin:2% 5%;
 }
+
+
 @media only screen and (max-width: 375px){
     .left-side-image img{
         width:300px;
-        margin:2%;
+        
     }
 }
 
@@ -72,22 +85,32 @@ p{
 }
 
 
+
+
 @media only screen and (max-width: 375px){
-    .right-hero{
+    .mobile-only{
        text-align:center;
+       font-family: 'Open Sans', sans-serif;
+      color:white;
+      font-size: 15px;
+      display: block;
+    float: left;
+    margin-right: 0.4em;
        
     }
     .right-hero h1{
         font-size: 25px;
         
      }
+     
      .right-hero p{
-        font-size: 17px;
-        
+        display:none;
      }
  
     
 }
+
+
 
 .btn{
     background-color: white;
@@ -106,7 +129,7 @@ p{
     .btn{
        margin-left: 5%;
        padding: 15px 90px;
-       margin-bottom: 10%;
+       margin: 8%;
     }
 
 }
@@ -131,10 +154,7 @@ p{
     .attribution{
         display: none;
     }
-    .social-media{
-        margin:20px;
-        
-    }
+    
 
 }
 
@@ -143,9 +163,13 @@ p{
     margin-right: 15%;
     margin-top: 5%;
 }
+
+
 .social-media{
 margin-right: 5%;
 }
+
+
 
 .social-media img{
     flex-direction: row;
